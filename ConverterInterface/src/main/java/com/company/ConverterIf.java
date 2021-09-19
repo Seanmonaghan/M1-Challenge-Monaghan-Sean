@@ -2,7 +2,7 @@ package com.company;
 
 public class ConverterIf implements Converter {
     public String convertMonth(int numberedMonth) {
-        String month = numberedMonth + " does not correspond with a month! Try a number between 1 - 12";
+        String month = "";
 
         if (numberedMonth == 1) {
             month = "January";
@@ -28,13 +28,15 @@ public class ConverterIf implements Converter {
             month = "November";
         } else if (numberedMonth == 12) {
             month = "December";
+        } else if (numberedMonth < 1 || numberedMonth > 12){
+            month = numberedMonth + " does not correspond with a month! Try a number between 1 - 12";
         }
 
         return month;
     }
 
     public String convertDay(int numberedDay) {
-        String day = numberedDay + " does not correspond with a day! Try a number between 1 - 7";
+        String day = "";
 
         if (numberedDay == 1) {
             day = "Sunday";
@@ -50,6 +52,8 @@ public class ConverterIf implements Converter {
             day = "Friday";
         } else if (numberedDay == 7) {
             day = "Saturday";
+        } else if (numberedDay < 1 || numberedDay > 7) {
+            day = numberedDay + " does not correspond with a day! Try a number between 1 - 7";
         }
         return day;
     }

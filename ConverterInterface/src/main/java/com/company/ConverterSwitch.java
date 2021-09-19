@@ -3,7 +3,7 @@ package com.company;
 public class ConverterSwitch implements Converter {
     public String convertMonth(int numberedMonth) {
 
-        String month = numberedMonth + " does not correspond with a month! Try a number between 1 - 12";
+        String month = "";
 
         switch (numberedMonth) {
             case 1:
@@ -43,13 +43,14 @@ public class ConverterSwitch implements Converter {
                 month = "December";
                 break;
             default:
+                month = numberedMonth + " does not correspond with a month! Try a number between 1 - 12";
                 break;
         }
         return month;
     }
 
     public String convertDay(int numberedDay) {
-        String day = numberedDay + " does not correspond with a day! Try a number between 1 - 7";
+        String day = "";
 
         switch (numberedDay) {
             case 1:
@@ -74,6 +75,7 @@ public class ConverterSwitch implements Converter {
                 day = "Saturday";
                 break;
             default:
+                day = numberedDay + " does not correspond with a day! Try a number between 1 - 7";
                 break;
         }
         return day;
