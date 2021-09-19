@@ -49,7 +49,7 @@ public class ConverterSwitch implements Converter {
     }
 
     public String convertDay(int numberedDay) {
-        String day = numberedDay + " does not correspond with a month! Try a number between 1 - 7";
+        String day = numberedDay + " does not correspond with a day! Try a number between 1 - 7";
 
         switch (numberedDay) {
             case 1:
