@@ -20,7 +20,7 @@ public class Calculations {
         return product;
     }
 
-    public double divide(int a, int b) {
+    public double divide(int a, int b) throws ArithmeticException {
         double quotient;
         quotient = a / b;
         return quotient;
@@ -44,7 +44,7 @@ public class Calculations {
         return product;
     }
 
-    public double divide(double a, double b) {
+    public double divide(double a, double b) throws ArithmeticException{
         double quotient;
         quotient = a / b;
         return quotient;
