@@ -20,8 +20,8 @@ public class Calculations {
         return product;
     }
 
-    public int divide(int a, int b) {
-        int quotient;
+    public double divide(int a, int b) {
+        double quotient;
         quotient = a / b;
         return quotient;
     }
