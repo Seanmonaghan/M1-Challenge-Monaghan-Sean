@@ -5,6 +5,8 @@ public class ConverterApplication {
         ConverterIf converterIf = new ConverterIf();
         ConverterSwitch converterSwitch = new ConverterSwitch();
 
+        for (int i=1; i < )
+
 
     }
 }

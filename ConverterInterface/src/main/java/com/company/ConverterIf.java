@@ -1,7 +1,7 @@
 package com.company;
 
 public class ConverterIf implements Converter {
-    public String ConvertMonth(int numberedMonth) {
+    public String convertMonth(int numberedMonth) {
         String month = numberedMonth + " does not correspond with a month! Try a number between 1 - 12";
 
         if (numberedMonth == 1) {
@@ -31,6 +31,27 @@ public class ConverterIf implements Converter {
         }
 
         return month;
+    }
+
+    public String convertDay(int numberedDay) {
+        String day = numberedDay + " does not correspond with a month! Try a number between 1 - 7";
+
+        if (numberedDay == 1) {
+            day = "Sunday";
+        } else if (numberedDay == 2) {
+            day = "Monday";
+        } else if (numberedDay == 3) {
+            day = "Tuesday";
+        } else if (numberedDay == 4) {
+            day = "Wednesday";
+        } else if (numberedDay == 5) {
+            day = "Thursday";
+        } else if (numberedDay == 6) {
+            day = "Friday";
+        } else if (numberedDay == 7) {
+            day = "Saturday";
+        }
+        return day;
     }
 
 }
